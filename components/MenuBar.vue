@@ -2,7 +2,7 @@
   <div class="card">
     <Menubar :model="items" class="border-noround pr-3 pl-3">
       <template #start>
-        <Image class="cursor-pointer" src="logo.svg" alt="Image" width="60" />
+        <Image class="cursor-pointer" src="/logo.svg" alt="Image" width="60" />
       </template>
       <template #item="{ item, props, hasSubmenu, root }">
         <a
@@ -42,7 +42,7 @@
               badgeSeverity="danger"
               plain
             />
-            <router-link to="auth/signin">
+            <router-link to="/auth/signin">
               <Button
                 type="button"
                 icon="pi pi-user"
