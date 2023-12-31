@@ -1,12 +1,21 @@
 <template>
-  <Dropdown
-    v-model="sortKey"
-    :options="sortOptions"
-    optionLabel="label"
-    placeholder="Sort By Price"
-    @change="onSortChange($event)"
-    size="small"
-  />
+  <div>
+    <Dropdown
+      v-model="sortKey"
+      :options="sortOptions"
+      optionLabel="label"
+      placeholder="Sort By Price"
+      @change="onSortChange($event)"
+      size="small"
+      inputClass="text-xs p-2"
+      panelClass="text-xs"
+      class="sorter"
+      :pt="{
+        item: { class: 'p-2' },
+        list: { class: 'p-0' },
+      }"
+    />
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -32,3 +41,8 @@ const onSortChange = (event: any) => {
   }
 };
 </script>
+<style scoped>
+.sorter ::v-deep(.p-dropdown-trigger) {
+  width: 2rem !important;
+}
+</style>

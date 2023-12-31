@@ -1,7 +1,8 @@
 <template>
-  <div>
+  <div class="h-screen">
     <TopBanner />
     <MenuBar />
-    <slot />
+    <div class="min-h-full"><slot class="pb-4" /></div>
+    <Footer />
   </div>
 </template>

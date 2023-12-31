@@ -111,6 +111,7 @@
         </template>
       </DataView>
     </div>
+    <ScrollTop />
   </div>
 </template>
 

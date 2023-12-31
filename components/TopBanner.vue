@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-bluegray-900 text-gray-100 p-1 flex justify-content-between lg:justify-content-center align-items-center flex-wrap"
+    class="bg-bluegray-700 text-gray-100 p-1 flex justify-content-between lg:justify-content-center align-items-center flex-wrap"
   >
     <div class="font-bold mr-8">🔥 Hot Deals!</div>
     <div class="align-items-center hidden lg:flex mr-5">

@@ -1,29 +1,31 @@
 <template>
-  <Toast />
-  <ConfirmPopup
-    :pt="{
-      footer: (options) => ({
-        class: ['flex justify-content-center flex-wrap gap-1 py-1'],
-      }),
-    }"
-    group="templating"
-  >
-    <template #message="slotProps">
-      <div
-        class="flex align-items-center w-full gap-3 border-bottom-1 surface-border p-2"
-      >
-        <p>{{ slotProps.message.message }}</p>
-      </div>
-    </template>
-  </ConfirmPopup>
-  <Button
-    @click="showTemplate($event)"
-    icon="pi pi-filter"
-    label="Filter"
-    iconPos="right"
-    class="attribute text-sm px-2 text-900 border-400"
-    outlined
-  ></Button>
+  <div>
+    <Toast />
+    <ConfirmPopup
+      :pt="{
+        footer: (options) => ({
+          class: ['flex justify-content-center flex-wrap gap-1 py-1'],
+        }),
+      }"
+      group="templating"
+    >
+      <template #message="slotProps">
+        <div
+          class="flex align-items-center w-full gap-3 border-bottom-1 surface-border p-2"
+        >
+          <p>{{ slotProps.message.message }}</p>
+        </div>
+      </template>
+    </ConfirmPopup>
+    <Button
+      @click="showTemplate($event)"
+      icon="pi pi-filter"
+      label="Filter"
+      iconPos="right"
+      class="attribute text-sm px-2 text-900 border-400"
+      outlined
+    ></Button>
+  </div>
 </template>
 <style scoped>
 .attribute ::v-deep(.p-button-label) {
