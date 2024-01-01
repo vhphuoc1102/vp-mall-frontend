@@ -36,15 +36,16 @@
             /></span>
           </div>
           <div class="flex flex-wrap align-items-center gap-2">
-            <Button
-              icon="pi pi-shopping-cart"
-              outlined
-              label="Cart"
-              aria-label="Cart"
-              badge="2"
-              badgeSeverity="danger"
-              plain
-            />
+            <router-link to="/cart">
+              <Button
+                icon="pi pi-shopping-cart"
+                outlined
+                label="Cart"
+                aria-label="Cart"
+                badge="2"
+                badgeSeverity="danger"
+                plain
+            /></router-link>
             <router-link to="/auth/signin">
               <Button
                 type="button"
@@ -64,45 +65,45 @@
 <script setup>
 const items = ref([
   {
-    label: "Categories",
-    icon: "pi pi-list",
+    label: 'Categories',
+    icon: 'pi pi-list',
   },
   {
-    label: "Brands",
-    icon: "pi pi-microsoft",
+    label: 'Brands',
+    icon: 'pi pi-microsoft',
     items: [
       {
-        label: "Core",
-        icon: "pi pi-bolt",
+        label: 'Core',
+        icon: 'pi pi-bolt',
       },
       {
         separator: true,
       },
       {
-        label: "Blocks",
-        icon: "pi pi-server",
+        label: 'Blocks',
+        icon: 'pi pi-server',
       },
       {
         separator: true,
       },
       {
-        label: "UI Kit",
-        icon: "pi pi-pencil",
+        label: 'UI Kit',
+        icon: 'pi pi-pencil',
       },
       {
         separator: true,
       },
       {
-        label: "Templates",
-        icon: "pi pi-palette",
+        label: 'Templates',
+        icon: 'pi pi-palette',
         items: [
           {
-            label: "Apollo",
-            icon: "pi pi-palette",
+            label: 'Apollo',
+            icon: 'pi pi-palette',
           },
           {
-            label: "Ultima",
-            icon: "pi pi-palette",
+            label: 'Ultima',
+            icon: 'pi pi-palette',
           },
         ],
       },
